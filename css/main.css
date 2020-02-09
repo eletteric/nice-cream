@@ -1,0 +1,170 @@
+#vanillaList,
+#chocolateList,
+#strawberryList,
+#bananaList {
+    height: auto;
+    overflow: visible;
+    width: 160px;
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 160px;
+}
+
+
+/*
+#vanillaNmbr {
+    border: 2px solid Tan;
+}
+
+#chocolateNmbr {
+    border: 2px solid #723910;
+}
+
+#strawberryNmbr {
+    border: 2px solid #da2c43;
+}
+
+#bananaNmbr {
+    border: 2px solid GoldenRod;
+}
+*/
+
+#bananaNmbr,
+#strawberryNmbr,
+#chocolateNmbr,
+#vanillaNmbr {
+    font-size: 1.2em
+}
+
+#pageWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0% 0% 0% 0%;
+    height: 70vh;
+    text-align: right;
+}
+
+#leftSide {
+    grid-column: 1/2;
+    grid-row: 1/1;
+    text-align: left;
+    max-width: 160px;
+}
+
+#interface {
+    grid-column: 3/4;
+    grid-row: 1/1;
+    text-align: left;
+    min-width: 50vw;
+    align-self: end;
+}
+
+#visualisation {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    padding-top: 10%;
+    max-width: 160px;
+    align-self: end;
+}
+
+form {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(98, 74, 46, 0.2);
+    padding: 10%;
+}
+
+h1 {
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 15em;
+    line-height: 0.7em;
+    color: Tan;
+    letter-spacing: 2px;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    text-shadow: -1px -1px #fff;
+    font-weight: normal;
+    margin-top: 2vh;
+}
+
+p {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 0.5em;
+    color: #666;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+    font-family: serif;
+    color: brown;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+body {
+    background-color: Ivory;
+    margin-top: 115px;
+}
+
+label {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.7em;
+    color: #666;
+}
+
+select {
+    display: inline-block;
+    margin-right: 20px;
+    color: #333;
+}
+
+select:focus {
+    outline: none;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin: 20px 0px 50px 0px;
+    padding: 12px 24px;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #333;
+    color: #ecf0f1;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #000;
+}
+
+#pageHeader {
+    position: fixed;
+    z-index: -9999999;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    text-align: left;
+}
