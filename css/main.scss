@@ -1,10 +1,12 @@
+$subTitleFont: "Arial", sans-serif;
+$subTitleColor: #333;
+
 h1,
 h2,
 h3 {
   padding: 0;
   margin: 0;
 }
-
 #vanillaList,
 #chocolateList,
 #strawberryList,
@@ -21,12 +23,11 @@ h3 {
 }
 
 h3 {
-  color: #333;
-  font-family: "Arial", sans-serif;
+  color: $subTitleColor;
+  font-family: $subTitleFont;
   font-weight: normal;
   font-size: 1em;
 }
-
 /*
 #vanillaNmbr {
     border: 2px solid Tan;
@@ -44,6 +45,7 @@ h3 {
     border: 2px solid GoldenRod;
 }
 */
+
 #bananaNmbr,
 #strawberryNmbr,
 #chocolateNmbr,
@@ -52,51 +54,35 @@ h3 {
 }
 
 #pageWrapper {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   padding: 0% 0% 0% 0%;
   height: 70vh;
   text-align: right;
 }
 
 #leftSide {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 1;
   grid-row: 1/1;
   text-align: left;
   max-width: 160px;
 }
 
 #interface {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
   grid-column: 3/4;
-  -ms-grid-row: 1;
   grid-row: 1/1;
   text-align: left;
   min-width: 50vw;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  align-self: end;
 }
 
 #visualisation {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 1;
   grid-row: 1/1;
   padding-top: 10%;
   max-width: 160px;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  align-self: end;
 }
 
 form {
@@ -176,11 +162,9 @@ select:focus {
   border-width: 0;
   outline: none;
   border-radius: 2px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   background-color: #333;
   color: #ecf0f1;
-  -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   cursor: pointer;
 }
@@ -198,4 +182,3 @@ select:focus {
   opacity: 0.3;
   text-align: left;
 }
-/*# sourceMappingURL=main.css.map */
