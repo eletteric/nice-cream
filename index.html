@@ -8,6 +8,7 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
     <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -136,65 +137,75 @@
             <h2>Pick your flavors:</h2>
             <p>(max 5 &amp; min 1 boll)</p>
             <form>
-                <label>
-                    <select id="vanillaNmbr" onchange="vanillaFunction()">
-                        <option value="0">0</option>
-                        <option value="1" selected="true">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>Vanilla
-                </label>
-                <br>
-                <br>
-                <label>
-                    <select id="chocolateNmbr" onchange="chocolateFunction()">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>Chocolate
-                </label>
-                <br>
-                <br>
-                <label>
-                    <select id="strawberryNmbr" onchange="strawberryFunction()">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>Strawberry
-                </label>
-                <br>
-                <br>
-                <label>
-                    <select id="bananaNmbr" onchange="bananaFunction()">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>Banana
-                </label>
-                <br>
-                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>
+                            <select class="form-control" id="vanillaNmbr" onchange="vanillaFunction()">
+                                <option value="0">0</option>
+                                <option value="1" selected="true">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>Vanilla
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <select class="form-control" id="chocolateNmbr" onchange="chocolateFunction()">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>Chocolate
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <select class="form-control" id="strawberryNmbr" onchange="strawberryFunction()">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>Strawberry
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>
+                            <select class="form-control" id="bananaNmbr" onchange="bananaFunction()">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>Banana
+                        </label>
+                    </div>
+                </div>
                 <h3>Choose your topping:</h3>
-                <input type="radio" name="topping" id="none" value="none">
-                <label for="none">None</label>
-                <br>
-                <input type="radio" name="topping" id="caramel" value="caramel">
-                <label for="caramel">Caramel</label>
-                <br>
-                <input type="radio" name="topping" id="chocolate" value="chocolate">
-                <label for="chocolate">Chocolate</label>
-                <br><br>
-                <button class="btn" value="Submit" name="submit" type="submit">Submit</button>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-radio-button">None
+                            <input type="radio" checked="checked" name="topping" id="none" value="none">
+                            <span class="checkmark"></span></label>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-radio-button">Caramel
+                            <input type="radio" name="topping" id="caramel" value="caramel">
+                            <span class="checkmark"></span></label>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-radio-button">Chocolate
+                            <input type="radio" name="topping" id="chocolate" value="chocolate">
+                            <span class="checkmark"></span></label>
+                    </div>
+                </div>
+                <button class="btn btn-dark" value="Submit" name="submit" type="submit">Submit</button>
             </form>
         </div>
     </div>
