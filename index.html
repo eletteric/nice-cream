@@ -16,42 +16,63 @@
 <body onload="initiateFirstBoll()">
     <ul id="donorList" style="visibility: hidden; display: none;">
         <li id="defaultBoll" style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
-            <svg height="160" width="160">
+            <svg version="1.1" id="vanillaIceBoll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="160" width="160">
                 <path stroke="Tan" fill="white" stroke-width="2" d="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
+	c0,8.169,1.473,15.992,4.16,23.227h11.796v4.401c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-4.401h35.684
+	v1.321c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-1.321h5.667v21.334c0,2.665,2.161,4.826,4.826,4.826
+	c2.666,0,4.829-2.161,4.829-4.826v-21.334h17.107v11.117c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-11.117
+	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z">
+                    <animate class="v" begin="indefinite" dur="1s" repeatCount="1" attributeName="d" restart="whenNotActive" fill="freeze" to="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
 	c0,8.169,1.473,15.992,4.16,23.227h11.796v18.402c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-18.402h35.684
 	v15.322c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-15.322h5.667v35.335c0,2.665,2.161,4.826,4.826,4.826
 	c2.666,0,4.829-2.161,4.829-4.826v-35.335h17.107v25.118c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-25.118
-	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                                                                    h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                </path>
             </svg>
         </li>
-        <li id="defaultBollChocolate"
-            style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
-            <svg height="160" width="160">
+        <li id="defaultBollChocolate" style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
+            <svg version="1.1" id="vanillaIceBoll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="160" width="160">
                 <path stroke="Tan" fill="#723910" stroke-width="2" d="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
+	c0,8.169,1.473,15.992,4.16,23.227h11.796v4.401c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-4.401h35.684
+	v1.321c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-1.321h5.667v21.334c0,2.665,2.161,4.826,4.826,4.826
+	c2.666,0,4.829-2.161,4.829-4.826v-21.334h17.107v11.117c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-11.117
+	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z">
+                    <animate class="c" begin="indefinite" dur="1s" repeatCount="1" attributeName="d" restart="whenNotActive" fill="freeze" to="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
 	c0,8.169,1.473,15.992,4.16,23.227h11.796v18.402c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-18.402h35.684
 	v15.322c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-15.322h5.667v35.335c0,2.665,2.161,4.826,4.826,4.826
 	c2.666,0,4.829-2.161,4.829-4.826v-35.335h17.107v25.118c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-25.118
-	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                                                                    h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                </path>
             </svg>
         </li>
-        <li id="defaultBollStrawberry"
-            style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
-            <svg height="160" width="160">
+        <li id="defaultBollStrawberry" style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
+            <svg version="1.1" id="vanillaIceBoll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="160" width="160">
                 <path stroke="Pink" fill="#da2c43" stroke-width="2" d="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
+	c0,8.169,1.473,15.992,4.16,23.227h11.796v4.401c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-4.401h35.684
+	v1.321c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-1.321h5.667v21.334c0,2.665,2.161,4.826,4.826,4.826
+	c2.666,0,4.829-2.161,4.829-4.826v-21.334h17.107v11.117c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-11.117
+	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z">
+                    <animate class="s" begin="indefinite" dur="1s" repeatCount="1" attributeName="d" restart="whenNotActive" fill="freeze" to="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
 	c0,8.169,1.473,15.992,4.16,23.227h11.796v18.402c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-18.402h35.684
 	v15.322c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-15.322h5.667v35.335c0,2.665,2.161,4.826,4.826,4.826
 	c2.666,0,4.829-2.161,4.829-4.826v-35.335h17.107v25.118c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-25.118
-	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                                                                    h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                </path>
             </svg>
         </li>
-        <li id="defaultBollBanana"
-            style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
-            <svg height="160" width="160">
+        <li id="defaultBollBanana" style="position:relative; margin-top:-115px; display: block; overflow:hidden; z-index:0;">
+            <svg version="1.1" id="vanillaIceBoll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="160" width="160">
                 <path stroke="GoldenRod" fill="#F9E9B6" stroke-width="2" d="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
+	c0,8.169,1.473,15.992,4.16,23.227h11.796v4.401c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-4.401h35.684
+	v1.321c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-1.321h5.667v21.334c0,2.665,2.161,4.826,4.826,4.826
+	c2.666,0,4.829-2.161,4.829-4.826v-21.334h17.107v11.117c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-11.117
+	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z">
+                    <animate class="b" begin="indefinite" dur="1s" repeatCount="1" attributeName="d" restart="whenNotActive" fill="freeze" to="M146.124,81.751c0-36.865-29.885-66.75-66.75-66.75c-36.865,0-66.75,29.885-66.75,66.75
 	c0,8.169,1.473,15.992,4.16,23.227h11.796v18.402c0,2.666,2.161,4.827,4.827,4.827c2.667,0,4.828-2.161,4.828-4.827v-18.402h35.684
 	v15.322c0,2.666,2.161,4.827,4.828,4.827c2.666,0,4.827-2.161,4.827-4.827v-15.322h5.667v35.335c0,2.665,2.161,4.826,4.826,4.826
 	c2.666,0,4.829-2.161,4.829-4.826v-35.335h17.107v25.118c0,2.667,2.161,4.828,4.826,4.828c2.666,0,4.829-2.161,4.829-4.828v-25.118
-	h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                                                                    h16.307C144.651,97.743,146.124,89.921,146.124,81.751z" />
+                </path>
             </svg>
         </li>
     </ul>
@@ -59,22 +80,77 @@
         <h1>Nice <br>Cream</h1>
     </div>
     <div id="pageWrapper">
-
-
         <div id="visualisation">
-            <ul id="vanillaList" style="z-index:-10">
+            <ul id="toppingList" style="z-index:0">
+                <li id="chocoTopping" style="position:relative; margin-bottom:-70px; display: block; z-index:0; display: none">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="70px" viewBox="0 0 160 70" enable-background="new 0 0 160 70" xml:space="preserve">
+                        <path fill="#341d08" d="M17.329,50.174c-2.33,6.513-5.576,15.105,3.17,16.472c8.747,1.366,9.96-8.662,11.48-13.12
+	C33.5,49.069,38.54,41.5,41.82,38.221c3.28-3.28,10.66-9.84,12.847,2.459c2.187,12.3,7.38,14.214,13.394,13.94
+	s11.207-1.094,20.5-11.479c9.293-10.387,22.14,4.099,29.519,11.753c7.38,7.652,19.135,7.652,20.774-1.64
+	c1.64-9.293-0.273-16.126,3.279-7.38c3.554,8.747,7.107,10.659,4.92-0.819c-2.187-11.48-16.673-31.434-34.44-38.54
+	C94.847-0.593,66.147-2.78,45.92,11.98C25.692,26.74,19.658,43.661,17.329,50.174z">
+                            <animate id="tc" begin="indefinite" dur="0.2s" repeatCount="1" attributeName="d" restart="whenNotActive" fill="freeze" to="M17.329,50.174c-2.33,6.513-5.576,17.333,3.17,18.699c8.747,1.366,9.96-8.662,11.48-13.12
+	c1.521-4.458,6.561-12.026,9.84-15.306c3.28-3.28,10.66-3.84,12.847,8.459c2.187,12.3,7.38,14.214,13.394,13.94
+	s11.207-1.094,20.5-11.479c9.293-10.387,22.14,4.099,29.519,11.753c7.38,7.652,19.135,7.652,20.774-1.64
+	c1.64-9.293-0.273-24.354,3.279-15.607c3.554,8.747,7.107,10.659,4.92-0.819c-2.187-11.48-16.673-31.434-34.44-38.54
+	C94.847-0.593,66.147-2.78,45.92,11.98C25.692,26.74,19.658,43.661,17.329,50.174z" />
+                        </path>
+                    </svg>
+                </li>
+                <li id="sprinklesTopping" style="position:relative; margin-bottom:-5px; display: block;z-index:0; display: none">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="70px" viewBox="0 0 160 70" enable-background="new 0 0 160 70" xml:space="preserve">
+                        <rect x="46.999" y="9.774" fill="#B25C1D" width="4.166" height="4.166" />
+                        <rect x="111.997" y="35.773" transform="matrix(0.8342 0.5515 -0.5515 0.8342 39.7984 -56.6405)" fill="#B25C1D" width="4.165" height="4.166" />
+                        <rect x="81.996" y="21.772" transform="matrix(0.9244 -0.3814 0.3814 0.9244 -2.7423 33.8741)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <rect x="88.753" y="48.857" transform="matrix(0.9244 -0.3814 0.3814 0.9244 -12.5616 38.4899)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <polygon fill="#B25C1D" points="109.196,16.435 111.497,12.449 113.799,16.435 " />
+                        <polygon fill="#B25C1D" points="45.346,60.694 44.061,56.274 48.531,57.372 " />
+                        <polygon fill="#B25C1D" points="90.835,4.557 91.484,0 95.106,2.84 " />
+                        <polygon fill="#B25C1D" points="73.195,13.433 75.496,9.447 77.797,13.433 " />
+                        <polygon fill="#B25C1D" points="65.494,34.934 70.033,34.173 68.422,38.485 " />
+                        <polygon fill="#B25C1D" points="30.369,32.778 34.909,32.017 33.297,36.329 " />
+                        <polygon fill="#B25C1D" points="49.165,19.04 53.704,18.279 52.092,22.591 " />
+                        <polygon fill="#B25C1D" points="127.495,20.932 132.034,20.171 130.423,24.483 " />
+                        <polygon fill="#B25C1D" points="93.106,11.043 92.228,8.341 94.526,6.671 96.825,8.341 95.948,11.043 " />
+                        <rect x="120.997" y="12.77" transform="matrix(0.9244 -0.3814 0.3814 0.9244 3.6399 48.0696)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <polygon fill="#B25C1D" points="111.474,8.794 115.617,6.791 115.279,11.382 " />
+                        <rect x="81.996" y="3.767" transform="matrix(0.9244 -0.3815 0.3815 0.9244 4.1275 32.5199)" fill="#B25C1D" width="4.165" height="4.166" />
+                        <polygon fill="#B25C1D" points="102.962,6.622 102.169,4.179 104.247,2.668 106.325,4.179 105.532,6.622 " />
+                        <polygon fill="#B25C1D" points="85.044,16.462 84.167,13.76 86.466,12.09 88.765,13.76 87.888,16.462 " />
+                        <polygon fill="#B25C1D" points="42.638,46.115 41.761,43.412 44.06,41.742 46.358,43.412 45.481,46.115 " />
+                        <polygon fill="#B25C1D" points="73.642,3.512 74.172,0.721 76.99,0.361 78.203,2.93 76.135,4.878 " />
+                        <rect x="95.996" y="17.77" transform="matrix(0.9244 -0.3814 0.3814 0.9244 -0.1576 38.9115)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <polygon fill="#B25C1D" points="61.043,18.46 60.167,15.758 62.465,14.088 64.764,15.758 63.887,18.46 " />
+                        <rect x="64.994" y="4.769" transform="matrix(0.8509 0.5253 -0.5253 0.8509 13.6001 -34.2149)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <polygon fill="#B25C1D" points="39.043,20.46 38.166,17.758 40.464,16.088 42.763,17.758 41.886,20.46 " />
+                        <polygon fill="#B25C1D" points="114.497,20.931 119.036,20.17 117.425,24.482 " />
+                        <rect x="55.995" y="25.77" transform="matrix(0.9244 -0.3814 0.3814 0.9244 -6.2333 24.2586)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <rect x="54.916" y="45.209" transform="matrix(0.9244 -0.3814 0.3814 0.9244 -13.7275 25.3107)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <polygon fill="#B25C1D" points="70.451,20.372 74.833,18.964 73.86,23.463 " />
+                        <polygon fill="#B25C1D" points="74.642,43.76 79.024,42.353 78.05,46.852 " />
+                        <polygon fill="#B25C1D" points="55.952,9.54 60.334,8.132 59.361,12.631 " />
+                        <polygon fill="#B25C1D" points="105.194,29.434 107.495,25.448 109.797,29.434 " />
+                        <polygon fill="#B25C1D" points="90.534,32.84 92.835,28.854 95.136,32.84 " />
+                        <polygon fill="#B25C1D" points="24.536,51.926 26.836,47.94 29.138,51.926 " />
+                        <polygon fill="#B25C1D" points="122.952,30.973 124.083,28.366 126.911,28.635 127.529,31.407 125.084,32.854 " />
+                        <polygon fill="#B25C1D" points="102.906,44.495 104.037,41.888 106.865,42.157 107.483,44.93 105.038,46.376 " />
+                        <polygon fill="#B25C1D" points="132.952,34.692 134.083,32.085 136.911,32.354 137.529,35.127 135.084,36.573 " />
+                        <polygon fill="#B25C1D" points="100.88,12.453 102.011,9.846 104.839,10.115 105.456,12.888 103.011,14.334 " />
+                        <rect x="126.997" y="44.77" transform="matrix(0.9244 -0.3814 0.3814 0.9244 -8.1123 52.7775)" fill="#B25C1D" width="4.166" height="4.166" />
+                        <polygon fill="#B25C1D" points="42.042,30.461 41.165,27.759 43.463,26.089 45.762,27.759 44.885,30.461 " />
+                    </svg>
+                </li>
             </ul>
-            <ul id="chocolateList" style="z-index:-20">
+            <ul id="chocolateList" style="z-index:-10">
             </ul>
-            <ul id="strawberryList" style="z-index:-30">
+            <ul id="strawberryList" style="z-index:-20">
             </ul>
-            <ul id="bananaList" style="z-index:-40">
+            <ul id="bananaList" style="z-index:-30">
+            </ul>
+            <ul id="vanillaList" style="z-index:-40">
             </ul>
             <!-- cone BEGIN -->
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="220px"
-                viewBox="0 0 160 220" enable-background="new 0 0 160 220" xml:space="preserve"
-                style="display:block; margin-top:-60px; position:relative; z-index:-100;">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="220px" viewBox="0 0 160 220" enable-background="new 0 0 160 220" xml:space="preserve" style="display:block; margin-top:-60px; position:relative; z-index:-100;">
                 <path fill="#A77B4D" d="M144.812,0H15.187C10.34,0,6.409,3.929,6.409,8.776c0,4.849,3.931,8.778,8.778,8.778h2.381L70.605,208.65
 	c0,5.209,4.222,9.43,9.43,9.43c5.21,0,9.432-4.221,9.432-9.43l53.041-191.096h2.304c4.85,0,8.778-3.929,8.778-8.778
 	C153.591,3.929,149.662,0,144.812,0z" />
@@ -134,48 +210,11 @@
             </svg>
         </div>
         <div id="interface">
-            <h2>Pick your flavors:</h2>
-            <p>(max 5 &amp; min 1 boll)</p>
-            <form>
+            <form autocomplete="off">
+                <h3>Flavors:</h3>
                 <div class="row">
                     <div class="col-md-3">
-                        <label>
-                            <select class="form-control" id="vanillaNmbr" onchange="vanillaFunction()">
-                                <option value="0">0</option>
-                                <option value="1" selected="true">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>Vanilla
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label>
-                            <select class="form-control" id="chocolateNmbr" onchange="chocolateFunction()">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>Chocolate
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label>
-                            <select class="form-control" id="strawberryNmbr" onchange="strawberryFunction()">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>Strawberry
-                        </label>
-                    </div>
-                    <div class="col-md-3">
-                        <label>
+                        <label>Banana
                             <select class="form-control" id="bananaNmbr" onchange="bananaFunction()">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -183,11 +222,65 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
-                            </select>Banana
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>Strawberry
+                            <select class="form-control" id="strawberryNmbr" onchange="strawberryFunction()">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label>Chocolate
+                            <select class="form-control" id="chocolateNmbr" onchange="chocolateFunction()">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Vanilla
+                            <select class="form-control" id="vanillaNmbr" onchange="vanillaFunction()">
+                                <option value="0">0</option>
+                                <option value="1" selected="true">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </label>
                     </div>
                 </div>
-                <h3>Choose your topping:</h3>
+                <h3>Toppings:</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="container" for="sprinkles">Sprinkles
+                            <input type="checkbox" onclick="addSprinkles()" id="sprinkles" name="sprinkles" value="sprinkles">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="container" for="choco">Chocolate
+                            <input type="checkbox" id="choco" onclick="addChoco()" name="choco" value="choco">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!--
                 <div class="row">
                     <div class="col-md-4">
                         <label class="form-radio-button">None
@@ -205,8 +298,16 @@
                             <span class="checkmark"></span></label>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" oninput="typeInput()" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                </div>-->
                 <button class="btn btn-dark" value="Submit" name="submit" type="submit">Submit</button>
             </form>
+
         </div>
     </div>
     <script src="js/main.js"></script>
