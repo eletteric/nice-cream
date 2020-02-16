@@ -2,15 +2,23 @@ var bollClone = document.getElementById("defaultBoll").cloneNode(true);
 var bollCloneChocolate = document.getElementById("defaultBollChocolate").cloneNode(true);
 var bollCloneStrawberry = document.getElementById("defaultBollStrawberry").cloneNode(true);
 var bollCloneBanana = document.getElementById("defaultBollBanana").cloneNode(true);
+var chocoTopping = document.getElementById("chocoTopping").cloneNode(true);
 
 var vanillaList = document.getElementById("vanillaList");
 var chocolateList = document.getElementById("chocolateList");
 var strawberryList = document.getElementById("strawberryList");
 var bananaList = document.getElementById("bananaList");
-
+var toppingList = document.getElementById("toppingList");
 // Add the default Boll
 function initiateFirstBoll() {
     vanillaList.appendChild(bollClone);
+    var elementsv = document.getElementsByClassName("v");
+
+    for (var i = 0; i < elementsv.length; i++) {
+
+        elementsv[i].beginElement();
+
+    }
 }
 
 function initiateBollChocolate() {
@@ -55,6 +63,7 @@ function getTotalAmount() {
 function vanillaFunction() {
 
 
+
     // Get the value at the MOMENT of selecting
     var vanillaBolls = document.getElementById("vanillaNmbr").value;
     // Change them to an Integer
@@ -86,7 +95,6 @@ function vanillaFunction() {
     }
 
 
-
     removeAllClones(vanillaList);
 
     for (i = 0; i < vanillaBollsNmbr; i++) {
@@ -94,7 +102,18 @@ function vanillaFunction() {
         bollClone.style.zIndex = i * -10;
         bollClone.id = "vanilla" + i;
         vanillaList.appendChild(bollClone);
+
     }
+
+    var elementsv = document.getElementsByClassName("v");
+
+    for (var i = 0; i < elementsv.length; i++) {
+
+        elementsv[i].beginElement();
+
+    }
+
+
 }
 
 function chocolateFunction() {
@@ -140,6 +159,12 @@ function chocolateFunction() {
         chocolateList.appendChild(bollCloneChocolate);
     }
 
+    var elementsc = document.getElementsByClassName("c");
+    for (var i = 0; i < elementsc.length; i++) {
+        elementsc[i].beginElement();
+
+
+    }
 }
 
 function strawberryFunction() {
@@ -176,8 +201,6 @@ function strawberryFunction() {
     }
 
 
-
-
     removeAllClones(strawberryList);
 
     for (i = 0; i < strawberryBollsNmbr; i++) {
@@ -186,6 +209,12 @@ function strawberryFunction() {
         strawberryList.appendChild(bollCloneStrawberry);
     }
 
+    var elementss = document.getElementsByClassName("s");
+    for (var i = 0; i < elementss.length; i++) {
+        elementss[i].beginElement();
+
+
+    }
 }
 
 function bananaFunction() {
@@ -220,14 +249,54 @@ function bananaFunction() {
         return;
     }
 
-
-
     removeAllClones(bananaList);
 
     for (i = 0; i < bananaBollsNmbr; i++) {
         var bollCloneBanana = document.getElementById("defaultBollBanana").cloneNode(true);
         bollCloneBanana.style.zIndex = i * -40;
         bananaList.appendChild(bollCloneBanana);
+    }
+    var elementsb = document.getElementsByClassName("b");
+    for (var i = 0; i < elementsb.length; i++) {
+        elementsb[i].beginElement();
+    }
+}
+
+
+function addChoco() {
+    var checkbox = document.getElementById('choco');
+    var chocoTop = document.getElementById("tc");
+    if (checkbox.checked != true) {
+        document.getElementById('chocoTopping').style.display = "none";
+    } else {
+        document.getElementById('chocoTopping').style.display = "block";
+        chocoTop.beginElement();
+    }
+
+}
+
+function addCaramel() {
+    var checkbox = document.getElementById('caramel');
+    var chocoTop = document.getElementById("tcaramel");
+    if (checkbox.checked != true) {
+        document.getElementById('caramelTopping').style.display = "none";
+    } else {
+        document.getElementById('caramelTopping').style.display = "block";
+        chocoTop.beginElement();
+    }
+
+}
+
+
+
+
+
+function addSprinkles() {
+    var checkbox = document.getElementById('sprinkles');
+    if (checkbox.checked != true) {
+        document.getElementById('sprinklesTopping').style.display = "none";
+    } else {
+        document.getElementById('sprinklesTopping').style.display = "block";
     }
 
 }
